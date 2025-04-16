@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,45 +9,61 @@
 
 <body>
     <header>
-        <img src="imgs/image-removebg-preview.png" alt="">
-        <h1>Formulário</h1>
+        <h1>Visita Hospital Psiquiátrico</h1>
     </header>
+    <form>
     <section id="sobre">
+        <form id="form-section">
         <h2>Nome completo:
-            <input type="text" placeholder="Digite seu nome">
+            <label for="nome"></label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
         </h2>
+    </form>
         <p>Escreva seu nome completo sem abreviações</p>
     </section>
     <section id="contras">
+        <form id="form-section">
             <h2> Data de nascimento:
-                <input type="date">
-            </h2>
+                <label for="data_nascimento"></label>
+                <input type="date" id="data_nascimento" required>
+            </h2></form>
             <p>Escreva quando você nasceu</p>
     </section>
     <section id="faixas">
         <div class="contra">
+            <form id="form-section">
         <h2>
-            Rua: <input type="text">
+            <label for="rua"></label>
+            Rua: <input type="text" id="rua" required>
         <br>
             <h2>
-                Número: <input type="text"><br>
+                <label for="number"></label>
+                Número: <input type="number" required><br>
                 <h2>
-                    Complemento (opcional): <input type="text"></div>
+                    </form></div>
     </section>
     <section id="contras">
+        <form id="form-section">
         <h2>
-            Contato: <input type="number" placeholder="XX XXXXX-XXXX">
+            <label for="numero"></label>
+            Contato: <input type="tel" id="numero" placeholder="(XX) XXXXX-XXXX"
+            pattern="(\([0-9]{2}\)\s([9]{1})?([0-9]{4}))">
         </h2>
             <h2>
-                Email (opcional): <input type="text" placeholder="Digite seu email">
-            </h2>
+                <label for="email"></label>
+                Email <h3>(opcional):</h3> <input type="email" id="email" placeholder="Digite seu email">
+            </h2></form>
             <p>Coloque seu número de telefone ou se preferir coloque seu email</p>
     </section>
     <section id="faixas">
-        <h2></h2>
+        <h4><p>Se você terminou envie seu formulário</p></h4>
         <div class="contra">
-            <p></p>
+            <form id="form-section">
+                <label for="enviar"></label>
+                <input type="submit" id="enviar">
+            </form>
     </section>
+</form>
     <footer>
         <p>&copy;Todos os direitos reservados à ninguém, coloque seus dados sem confiança</p>
     </footer>
